@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>点位表格</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            padding: 40px;
+            font-family: system-ui, sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        td {
+            border: 1px solid #666;
+            padding: 36px 24px;
+            text-align: center;
+        }
+        tr:first-child td {
+            background-color: #f0f4f9;
+            font-weight: bold;
+        }
+        td:nth-child(1) {
+            width: 40%;
+        }
+        td:nth-child(2) {
+            width: 60%;
+        }
+        .tip-text {
+            margin-top: 20px;
+            color: #28a745;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>日期</td>
+            <td>点位</td>
+        </tr>
+        <tr>
+            <td>2026.10.26 周一</td>
+            <td>中午 #2  晚上 #03 #3</td>
+        </tr>
+    </table>
+    <div class="tip-text">Tip：目前正处于测试阶段，有大量信息等待添加中，预计11月2日正式上线。</div>
+</body>
+</html>
